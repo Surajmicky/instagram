@@ -1,9 +1,17 @@
-import React from 'react'
-
-const StoryList = () => {
+import React from "react";
+import StoryCard from "./StoryCard";
+import data from "../assets/data.json";
+const StoryList = ({ innerWidth }) => {
   return (
-    <div>StoryList</div>
-  )
-}
+    <div
+      className={`${
+        innerWidth > 480 ? "mt-8" : ""
+      } flex flex-row gap-4 overflow-x-scroll max-w-lg [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']`}>
+      {data.stories.map((story) => (
+        <StoryCard key={story.id} {...story} />
+      ))}
+    </div>
+  );
+};
 
-export default StoryList
+export default StoryList;
