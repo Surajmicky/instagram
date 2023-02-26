@@ -18,7 +18,7 @@ useEffect(() => {
   return () => window.removeEventListener('resize',handleResize);
 }, []);
   return (
-     <div  className={`${innerWidth>480? 'flex flex-row':"flex flex-col"} body-font font-Dosis`}>
+     <div  className={`${innerWidth>480? 'flex flex-row':"flex flex-col"} body-font font-rajdhani`}>
       {/* Header section */}
       <Header   filteredData={filteredData} setFilteredData={setFilteredData} innerWidth={innerWidth}/>
       {/* Body section */}

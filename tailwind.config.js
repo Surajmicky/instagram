@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        'Dosis':['Montserrat','Dosis']
+        'rajdhani':['Rajdhani']
       }
     },
   },

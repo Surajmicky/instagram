@@ -76,7 +76,7 @@ const Sidebar = ({ innerWidth, filteredData, setFilteredData }) => {
             item.title === "Search" && searchActive ? (
               <div
                 key={"1000"}
-                className="flex flex-row relative right-4 py-3 items-center justify-between">
+                className="flex cursor-pointer flex-row relative right-4 py-3 items-center justify-between">
                 <Searchbar
                   filteredData={filteredData}
                   setFilteredData={setFilteredData}
@@ -93,7 +93,7 @@ const Sidebar = ({ innerWidth, filteredData, setFilteredData }) => {
               <div
                 key={index}
                 onClick={() => handleSearch(item.title)}
-                className="w-full  flex px-4 items-center py-4">
+                className="w-full cursor-pointer  flex px-4 items-center py-4">
                 <span> {item.icon}</span>{" "}
                 {innerWidth > 800 && (
                   <span className="ml-2 lg:ml-4">{item.title}</span>
