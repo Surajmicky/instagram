@@ -1,5 +1,5 @@
 import { MdFavoriteBorder } from "react-icons/md";
-import React, { useState } from "react";
+import React from "react";
 import Searchbar from "./Searchbar";
 //Navbar Component to be rendered conditionally when screen size is smaller than 480px
 const Navbar = ({ filteredData, setFilteredData }) => {

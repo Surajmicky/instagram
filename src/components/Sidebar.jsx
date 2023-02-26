@@ -76,7 +76,7 @@ const Sidebar = ({ innerWidth, filteredData, setFilteredData }) => {
             item.title === "Search" && searchActive ? (
               <div
                 key={"1000"}
-                className="flex flex-row items-center justify-between">
+                className="flex flex-row relative right-4 py-3 items-center justify-between">
                 <Searchbar
                   filteredData={filteredData}
                   setFilteredData={setFilteredData}
