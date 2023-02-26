@@ -6,7 +6,7 @@ import data from "../assets/data.json";
 const Searchbar = ({ setFilteredData }) => {
   const handleSearch = (e) => {
     let filtered = data.posts.filter((post) =>
-      post.description.includes(e.target.value)
+      post.description.includes(e.target.value.toLowerCase())
     );
     setFilteredData(filtered);
   };

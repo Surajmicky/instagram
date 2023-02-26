@@ -7,7 +7,7 @@ const StoryList = ({ innerWidth }) => {
     <div
       className={`${
         innerWidth > 480 ? "mt-8" : ""
-      } flex flex-row gap-4 overflow-x-scroll max-w-lg [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']`}>
+      } flex flex-row gap-4 overflow-x-scroll max-w-sm [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']`}>
       {data.stories.map((story) => (
         <StoryCard key={story.id} {...story} />
       ))}
