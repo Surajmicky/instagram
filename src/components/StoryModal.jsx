@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-
+import React from "react";
+//Modal component to display image of story(fullscreen)
 const StoryModal = ({ setShowModal, showModal, imgUrl }) => {
   return (
     <>

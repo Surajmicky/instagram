@@ -1,13 +1,15 @@
 import React from "react";
 import Comment from "./Comment";
 import { useState, useEffect } from "react";
+//CommentList component to render all comments added to single post.////////////////////
 const CommentList = ({ comments }) => {
   const [allComments, setAllComments] = useState(comments);
   const [input, setInput] = useState("");
   const handleAddComment = () => {
     let newComment = input;
-
-    setAllComments([...allComments, newComment]);
+     if(input.length>4){
+         setAllComments([...allComments, newComment]);
+     }
     setInput("");
   };
   useEffect(() => {}, [allComments]);

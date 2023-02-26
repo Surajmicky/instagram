@@ -1,7 +1,7 @@
 import { MdFavoriteBorder } from "react-icons/md";
 import React, { useState } from "react";
 import Searchbar from "./Searchbar";
-
+//Navbar Component to be rendered conditionally when screen size is smaller than 480px
 const Navbar = ({ filteredData, setFilteredData }) => {
   return (
     <div className="w-full sticky top-0 bg-white py-3 flex items-center justify-around">

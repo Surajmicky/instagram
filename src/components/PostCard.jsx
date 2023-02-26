@@ -4,6 +4,7 @@ import { VscComment } from "react-icons/vsc";
 import { FiSend,FiMoreHorizontal } from "react-icons/fi";
 import CommentList from "./CommentList";
 import { MdSend } from "react-icons/md";
+//Single Card component of Post //////////////////////
 const Card = (post) => {
   const {
     userName,
@@ -35,6 +36,9 @@ const Card = (post) => {
             alt=""
           />
           <span>{userName}</span>
+          <span className="mt-2 text-slate-600 mb-1 text-sm">
+          {hoursAgo}h
+        </span>
         </div>
         <FiMoreHorizontal className="w-6 h-6" />
       </div>
@@ -111,9 +115,7 @@ const Card = (post) => {
           Show all the {comment} comments
         </span>
         {showComments && <CommentList post={post} comments={comments} />}
-        <p className="mt-2 text-slate-600 text-xs uppercase">
-          {hoursAgo} Hours Ago
-        </p>
+        
       </div>
     </div>
   );

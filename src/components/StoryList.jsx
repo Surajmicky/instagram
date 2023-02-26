@@ -1,6 +1,7 @@
 import React from "react";
 import StoryCard from "./StoryCard";
 import data from "../assets/data.json";
+//component to list all stories cards 
 const StoryList = ({ innerWidth }) => {
   return (
     <div

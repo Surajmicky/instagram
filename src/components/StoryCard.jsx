@@ -1,5 +1,6 @@
 import StoryModal from "./StoryModal";
 import {useState} from 'react'
+//component to render one single story
 const StoryCard = ({name,imgUrl}) => {
    const [showModal, setShowModal] = useState(false);
    

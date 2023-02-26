@@ -11,7 +11,7 @@ import {
   MdAddBox,
   MdAccountCircle,
 } from "react-icons/md";
-
+// contents of sidebar /////////////////////////////////
 const data = [
   {
     title: "Home",
@@ -46,9 +46,9 @@ const data = [
     icon: <MdAccountCircle size={30} />,
   },
 ];
+// Sidebar component to render conditionally when screen size is larger than 480px//////////////
 
 const Sidebar = ({ innerWidth, filteredData, setFilteredData }) => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
   const [searchActive, setSearchActive] = useState(false);
   const handleSearch = (title) => {
     if (title === "Search") {
@@ -70,6 +70,7 @@ const Sidebar = ({ innerWidth, filteredData, setFilteredData }) => {
         />
       </div>
       <div>
+        {/* mapping content of sidebar */}
         {data &&
           data.map((item, index) =>
             item.title === "Search" && searchActive ? (
@@ -88,6 +89,7 @@ const Sidebar = ({ innerWidth, filteredData, setFilteredData }) => {
                 />
               </div>
             ) : (
+              // conditionally checking for searchbar if clicked then searchbar will be rendered
               <div
                 key={index}
                 onClick={() => handleSearch(item.title)}
