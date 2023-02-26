@@ -17,7 +17,7 @@
    * Like posts
    * Comment on posts
         * View all comments on a post
- * Share, Save (will only change the color of icons)
+   * Share, Save (will only change the color of icons)
  * Search for posts list based on the keyword typed in search matching the content in the description.
  * Responsive design
  * Stories list
