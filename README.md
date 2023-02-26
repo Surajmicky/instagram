@@ -38,6 +38,8 @@
 ## Comment Post
 <img src="./src/assets/readmeScreenshots/comment.png" alt="go to a profile from feed" width="300" />
 
+## Architecture
+<img src="./src/assets/readmeScreenshots/architecture.jpg" alt="go to a profile from feed" width="300" />
 
 
 ## Getting started
